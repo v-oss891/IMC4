@@ -1,61 +1,52 @@
 # 🚀 IMC4 – Algorithmic Trading Strategies in Python
 
-A collection of algorithmic trading strategies implemented in Python, focusing on quantitative techniques such as Monte Carlo simulations and mean reversion market making.
+A collection of algorithmic trading strategies implemented in Python, covering multiple quantitative approaches such as simulation, market making, and statistical trading.
 
 ---
 
 ## 📌 Overview
 
-This project demonstrates the design and evaluation of trading strategies using simulation-based approaches.
-It highlights strong skills in:
+This repository focuses on building and testing multiple trading strategies using Python.
 
-* Quantitative analysis
+It demonstrates:
+
+* Quantitative modeling
 * Algorithm design
-* Data-driven decision making
+* Strategy experimentation at scale
 
 ---
 
-## 🧠 Strategies Implemented
+## 🧠 Strategies
 
-### 🔹 Monte Carlo Trading
+This project contains multiple trading strategies including (but not limited to):
 
-* Simulates multiple price paths
-* Estimates expected returns and risk
-* Useful for probabilistic decision making
+* Monte Carlo-based strategies
+* Mean Reversion models
+* Market Making algorithms
 
----
-
-### 🔹 WallMid Mean Reversion Market Making
-
-* Assumes price reverts to a mean (mid-price)
-* Places buy/sell orders around mid-price
-* Profits from short-term inefficiencies
+👉 Each strategy is implemented as a separate module.
 
 ---
 
-## 📊 Strategy Performance
+## 📊 Results
 
-### WallMid Mean Reversion Market Making
+All strategy results, performance logs, and visualizations are stored separately.
 
-![Strategy Result](Wallmid.png)
-
-**Observations:**
-
-* Consistent upward PnL trend
-* Handles volatility effectively
-* Shows robustness across time
+📂 View results here:
+➡️ `results/`
 
 ---
 
 ## 📂 Project Structure
 
-```
+```id="g5bytd"
 IMC4/
 ├── datamodel.py
 ├── monte_carlo_trader.py
 ├── wallmid_meanrevert_mm.py
 ├── test_monte_carlo.py
 ├── test_trader.py
+├── results/
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -63,24 +54,17 @@ IMC4/
 
 ---
 
-## ⚙️ Setup & Usage
+## ⚙️ Usage
 
-### 1. Clone the repository
+Run any strategy:
 
-```
-git clone https://github.com/v-oss891/IMC4.git
-cd IMC4
-```
-
-### 2. Run strategy
-
-```
-python monte_carlo_trader.py
+```id="cn2v0l"
+python <strategy_file>.py
 ```
 
-### 3. Run tests
+Run tests:
 
-```
+```id="67zlp8"
 python test_trader.py
 ```
 
@@ -89,9 +73,9 @@ python test_trader.py
 ## 📈 Future Improvements
 
 * Add performance metrics (Sharpe ratio, drawdown)
-* Integrate real market data APIs
-* Build backtesting engine
-* Add visualization dashboards
+* Integrate real market data
+* Build a backtesting framework
+* Compare multiple strategies
 
 ---
 
